@@ -1,5 +1,16 @@
 <div class="col-sm-11 col-xs-12 blog-content">
-  <h2 class="text-center"><%= @post.title %></h2>
-  <h5 class="text-center"><%= @post.created_at.strftime('%b %d, %Y') %></h5>
+  <div class="col-md-auto">
+    <h2 class="text-center"><%= @post.title %></h2>
+    <h5 class="text-center"><%= @post.created_at.strftime('%b %d, %Y') %></h5>
+    <div class="row justify-content-md-center">
+      <div class="col-md-auto">
+        <%= image_tag(@post.admin.avatar.url(:thumb)) %>
+      </div>
+      <div class="col-md-auto">
+        <h6 class="text-center text-muted"><%= @post.admin.username %></h6>
+      </div>
+    </div>
+
+  </div>
   <div><%= raw @post.body %></div>
 </div>
