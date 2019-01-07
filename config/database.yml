@@ -35,4 +35,6 @@ test:
 production:
   <<: *default
   database: nohlson_prod
+  host: ''
+  username: 'deploy'
   password: <%= ENV['NOHLSON_DATABASE_PASSWORD'] %>

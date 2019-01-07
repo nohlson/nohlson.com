@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  devise_for :admins
-  mount Ckeditor::Engine => '/ckeditor'
   get 'about/main'
   get 'music/music'
   get 'welcome/index'

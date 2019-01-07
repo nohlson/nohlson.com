@@ -18,7 +18,6 @@
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require 'jquery.jplayer'
-//= require ckeditor/init
 //= require_tree .
 
 

@@ -68,11 +68,3 @@ gem 'autoprefixer-rails'
 
 #https://github.com/mcfiredrill/jplayer-rails for playing audio
 gem 'jplayer-rails'
-
-gem 'pg'
-#  https://scotch.io/tutorials/build-a-blog-with-ruby-on-rails-part-1
-gem 'carrierwave'
-gem 'ckeditor'
-gem 'devise'
-gem 'mini_magick'
-gem 'simple_form'
