@@ -1,0 +1,486 @@
+
+<!--<head>-->
+  <!--<meta charset="utf-8" />-->
+  <!--&lt;!&ndash; Website Design By: www.happyworm.com &ndash;&gt;-->
+  <!--<title>Demo : The jPlayerPlaylist Object</title>-->
+  <!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />-->
+  <!--<meta name="description" content="The CSS styleable jQuery media player plugin with HTML5 support!" />-->
+  <!--<meta name="keywords" content="jPlayer, jQuery, jQuery plugin, media, video, audio, media player, video player, audio player, mp3, mp4, m4a, m4v, aac, h264, ogg, oga, ogv, wav, webm" />-->
+  <!--<meta name="company" content="Happyworm" />-->
+  <!--<link href="/css/jPlayer.css" rel="stylesheet" type="text/css" />-->
+  <!--<link rel="shortcut icon" href="/graphics/jplayer.ico" type="image/x-icon" />-->
+  <!--&lt;!&ndash;[if lt IE 9]>-->
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <!--<![endif]&ndash;&gt;-->
+  <!--&lt;!&ndash;[if IE 6]>-->
+  <!--<link href="/css/ie6.css" rel="stylesheet" type="text/css" />-->
+  <!--<![endif]&ndash;&gt;-->
+  <!--<link href="/js/prettify/prettify-jPlayer.css" rel="stylesheet" type="text/css" />-->
+  <!--<link href="../dist/skin/pink.flag/css/jplayer.pink.flag.min.css" rel="stylesheet" type="text/css" />-->
+  <!--<script type="text/javascript" src="../dist/jplayer/jquery.jplayer.min.js"></script>-->
+  <!--<script type="text/javascript" src="../dist/add-on/jplayer.playlist.min.js"></script>-->
+  <!--<script type="text/javascript" src="../dist/add-on/jquery.jplayer.inspector.min.js"></script>-->
+  <script type="text/javascript">
+
+      $(document).ready(function(){
+
+          var myPlaylist = new jPlayerPlaylist({
+              jPlayer: "#jquery_jplayer_N",
+              cssSelectorAncestor: "#jp_container_N"
+          }, [
+              {
+                  title:"2 Crainz",
+                  artist:"Passenger Assesment",
+                  mp3:"<%= asset_path('2crainz.mp3') %>",
+                  poster: "<%= asset_path('2crainz.jpg') %>"
+              },
+              {
+                  title:"I Had That Dream...",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('ihadthatdream.mp3') %>",
+                  poster: "<%= asset_path('ihadthatdream.jpg') %>"
+              },
+              {
+                  title:"Redlights (alltrue demo remix wip)",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('Redlights (alltrue demo remix wip).mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"ihadthatdream",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('ihadthatdream.mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"a day in the haze",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('a day in the haze.mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"Idea",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('Idea.mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"Untitled",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('Untitled.mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"I Don't Care",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('I Dont Care.mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"Hold On",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('Hold On.mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"Smooth Beat",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('Smooth Beat.mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"Airwave Clarity",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('Airwave Clarity.mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"Saylor Twift I Don't Belong With You",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('Saylor Twift I Dont Belong With You.mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"2crainz",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('2crainz.mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"TSLO",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('TSLO.mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"NULL Mixtape",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('NULL Mixtape.mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"pc1cmaj (1)",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('pc1cmaj (1).mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"hardhand",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('hardhand.mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"Damaged (alltrue remix)",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('Damaged (alltrue remix).mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"Call Me Maybe (alltrue remix)",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('Call Me Maybe (alltrue remix).mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"Waiting",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('Waiting.mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"Textrue",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('Textrue.mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"00001010 Feet Tall",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('00001010 Feet Tall.mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"modernclassical",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('modernclassical.mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"le sperit",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('le sperit.mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"Waiting New",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('Waiting New.mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"handstrap",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('handstrap.mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"HU Sound Design Test melodi",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('HU Sound Design Test melodi.mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"Passenger Assessment Ambience Demo",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('Passenger Assessment Ambience Demo.mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"mwett",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('mwett.mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"Granger Anthem",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('Granger Anthem.mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"Passenger Assessment September Demo",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('Passenger Assessment September Demo.mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"Chip2",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('Chip2.mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"Handsup break attack",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('Handsup break attack.mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"saylor twift we might actually get back together",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('saylor twift we might actually get back together.mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"Parent Us Original",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('Parent Us Original.mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"Nonny (or otherwise another sound design test track)",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('Nonny (or otherwise another sound design test track).mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"I Had That Dream...",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('I Had That Dream....mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"Classical1Demo",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('Classical1Demo.mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"2 hc",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('2 hc.mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"Just Let Go Official Instrumental",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('Just Let Go Official Instrumental.mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"Somebeat2",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('Somebeat2.mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"look away trap",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('look away trap.mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"Saylor Twift - We Might Actually Get Back Together",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('Saylor Twift - We Might Actually Get Back Together.mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"wyg",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('wyg.mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"Funky",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('Funky.mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"alwayswork",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('alwayswork.mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"Weastside Anthem",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('Weastside Anthem.mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"First Time Again Demo",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('First Time Again Demo.mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              },
+              {
+                  title:"Recollection",
+                  artist:"alltrue",
+                  mp3:"<%= asset_path('Recollection.mp3') %>",
+                  poster: "<%= asset_path('island.jpg') %>"
+              }
+          ], {
+              supplied: "webmv, ogv, m4v, oga, mp3",
+              useStateClassSkin: true,
+              autoBlur: false,
+              smoothPlayBar: true,
+              keyEnabled: true,
+              audioFullScreen: true
+          });
+          // The shuffle commands
+
+          $("#playlist-shuffle").click(function() {
+              myPlaylist.shuffle();
+          });
+
+          $("#playlist-shuffle-false").click(function() {
+              myPlaylist.shuffle(false);
+          });
+          $("#playlist-shuffle-true").click(function() {
+              myPlaylist.shuffle(true);
+          });
+
+          // The select commands
+
+          $("#playlist-select--2").click(function() {
+              myPlaylist.select(-2);
+          });
+          $("#playlist-select--1").click(function() {
+              myPlaylist.select(-1);
+          });
+          $("#playlist-select-0").click(function() {
+              myPlaylist.select(0);
+          });
+          $("#playlist-select-1").click(function() {
+              myPlaylist.select(1);
+          });
+          $("#playlist-select-2").click(function() {
+              myPlaylist.select(2);
+          });
+
+          // The next/previous commands
+
+          $("#playlist-next").click(function() {
+              myPlaylist.next();
+          });
+          $("#playlist-previous").click(function() {
+              myPlaylist.previous();
+          });
+
+          // The play commands
+
+          $("#playlist-play").click(function() {
+              myPlaylist.play();
+          });
+
+          $("#playlist-play--2").click(function() {
+              myPlaylist.play(-2);
+          });
+          $("#playlist-play--1").click(function() {
+              myPlaylist.play(-1);
+          });
+          $("#playlist-play-0").click(function() {
+              myPlaylist.play(0);
+          });
+          $("#playlist-play-1").click(function() {
+              myPlaylist.play(1);
+          });
+          $("#playlist-play-2").click(function() {
+              myPlaylist.play(2);
+          });
+
+          // The pause command
+
+          $("#playlist-pause").click(function() {
+              myPlaylist.pause();
+          });
+
+          // Changing the playlist options
+
+          // Option: autoPlay
+
+          $("#playlist-option-autoPlay-true").click(function() {
+              myPlaylist.option("autoPlay", true);
+          });
+          $("#playlist-option-autoPlay-false").click(function() {
+              myPlaylist.option("autoPlay", false);
+          });
+
+
+
+
+          $("#jplayer_inspector_1").jPlayerInspector({jPlayer:$("#jquery_jplayer_N")});
+      });
+      //]]>
+  </script>
+</head>
+<div class="row">
+  <div class="col">
+    <div id="container">
+      <div id="content_main">
+        <section>
+          <div id="jp_container_N" class="jp-video jp-video-270p" role="application" aria-label="media player">
+            <div class="jp-type-playlist">
+              <div id="jquery_jplayer_N" class="jp-jplayer"></div>
+              <div class="jp-gui">
+                <div class="jp-video-play">
+                  <button class="jp-video-play-icon" role="button" tabindex="0">play</button>
+                </div>
+                <div class="jp-interface">
+                  <div class="jp-progress">
+                    <div class="jp-seek-bar">
+                      <div class="jp-play-bar"></div>
+                    </div>
+                  </div>
+                  <div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+                  <div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+                  <div class="jp-details">
+                    <div class="jp-title" aria-label="title">&nbsp;</div>
+                  </div>
+                  <div class="jp-controls-holder">
+                    <div class="jp-volume-controls">
+                      <button class="jp-mute" role="button" tabindex="0">mute</button>
+                      <button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+                      <div class="jp-volume-bar">
+                        <div class="jp-volume-bar-value"></div>
+                      </div>
+                    </div>
+                    <div class="jp-controls">
+                      <button class="jp-previous" role="button" tabindex="0">previous</button>
+                      <button class="jp-play" role="button" tabindex="0">play</button>
+                      <button class="jp-stop" role="button" tabindex="0">stop</button>
+                      <button class="jp-next" role="button" tabindex="0">next</button>
+                    </div>
+                    <div class="jp-toggles">
+                      <button class="jp-repeat" role="button" tabindex="0">repeat</button>
+                      <button class="jp-shuffle" role="button" tabindex="0">shuffle</button>
+                      <button class="jp-full-screen" role="button" tabindex="0">full screen</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="jp-playlist">
+                <ul>
+                  <!-- The method Playlist.displayPlaylist() uses this unordered list -->
+                  <li></li>
+                </ul>
+              </div>
+              <div class="jp-no-solution">
+                <span>Update Required</span>
+                To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <h1>My <a href="https://soundcloud.com/nno1">SoundCloud</a></h1>
+  </div>
+</div>
+
+</body>
