@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class MusicControllerTest < ActionDispatch::IntegrationTest
-  test "should get main" do
+  test "should get about" do
     get music_main_url
     assert_response :success
   end

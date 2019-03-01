@@ -1,0 +1,11 @@
+<h1>Nate Ohlson</h1>
+<p>I am a kid who does things occasionally. I'll fill you in later.</p>
+<%= form_tag("message", method: "post") do %>
+  <%= label_tag(:name, "Name:") %>
+  <%= text_field_tag(:name) %>
+  <br/>
+  <%= label_tag(:message, "Message:") %>
+  <br/>
+  <%= text_area_tag(:message, '', size: "25x10") %>
+  <%= submit_tag("Submit") %>
+<% end %>
